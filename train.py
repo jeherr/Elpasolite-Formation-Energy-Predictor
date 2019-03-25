@@ -1,10 +1,13 @@
 import sys
-import cPickle
+import pickle
 import network_model
 
 def main():
 	data = str(sys.argv[1])
-	data_dict = cPickle.load(open(data, 'rb'))
+	if sys.version_info.major > 2:
+		data_dict = pickle.load(open(data, 'rb'), encoding='latin1')
+	else:
+		data_dict = pickle.load(open(data, 'rb'))
 	model = network_model.NNModel(data=data_dict)
 	model.train()
 
