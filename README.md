@@ -34,7 +34,7 @@ model = network_model.NNModel(name="ElpasEM_Thu_Mar_21_13.16.26_2019")
 ```
 
 ## Citing this work
-A preprint of this paper is available at https://arxiv.org/abs/1811.00123 for citation.
+A publication for citation available at https://doi.org/10.1063/1.5108803.
 
 
 ## Acknowledgments
